@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+.wrap {
+	max-width: 1600px;
+	margin: auto;
+	padding: 0 80px;
+}
+section {
+	padding: 80px 0;
+}
+section .title {
+	position: relative;
+	text-align: center;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 43px;
+	font-weight: 500;
+	margin-bottom: 60px;
+	padding-bottom: 20px;
+}
+section .title::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	height: 3px;
+	background: #111;
+	transform: translateX(-50%);
+}
+section .title::after {
+	position: absolute;
+	bottom: -13px;
+	left: 50%;
+	font-size: 20px;
+	color: lightskyblue;
+	padding: 5px;
+	background: #fff;
+	transform: translateX(-50%);
+}
+
+/*Navigation bar START*/
+nav {
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	padding: 30px 0;
+	font-family: 'Ubuntu', sans-serif;
+	transition: all .2s ease;
+}
+nav.sticky {
+	padding: 8px 0;
+	background: lightskyblue;
+	box-shadow: 0px 3px 5px rgba(0, 0, 0, .3);
+}
+nav .wrap {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+nav .logo a {
+	color: #fff;
+	font-size: 43px;
+	font-weight: 600;
+	transition: all .2s ease;
+}
+nav.sticky .logo a {
+	font-size: 40px;
+}
+nav .logo a span {
+	color: lightskyblue;
+}
+nav.sticky .logo a span {
+	color: #fff;
+}
+nav .menu li {
+	display: inline-block;
+	list-style: none;
+	margin-left: 29px;
+}
+nav .menu li a {
+	color: #fff;
+	font-size: 25px;
+	font-weight: 500;
+	transition: all .2s ease;
+}
+nav.sticky .menu li a {
+	font-size: 22px;
+}
+nav .menu li a:hover {
+	color: lightskyblue;
+}
+nav.sticky .menu li a:hover {
+	color: #fff;
+	text-shadow: 3px 3px 2px rgba(0, 0, 0, .1);
+}
+
+
+/*Home START*/
+.home {
+	background: url('../img/home-background.png');
+	height: 100vh;
+	display: flex;
+	font-family: 'Ubuntu', sans-serif;
+	min-height: 500px;
+	color: #fff;
+}
+.home .wrap {
+	margin: auto 50px;
+}
+.home .home-content .text-1 {
+	font-size: 50px;
+	font-weight: 500;
+}
+.home .home-content .text-2 {
+	font-size: 105px;
+	font-weight: 600;
+	margin-left: -4px;
+}
+.home .home-content .text-3 {
+	font-size: 36px;
+	font-weight: 500;
+}
+
+
+/*About START*/
+.about {
+	background: #fff;
+	font-family: 'Poppins', sans-serif;
+	margin-bottom: 40px;
+}
+.about .title::before {
+	width: 180px;
+}
+.about .title::after {
+	content: "Description";
+}
+.about .about-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.about .about-content .left {
+	width: 40%;
+}
+.about .about-content .left img {
+	width: 400px;
+	height: 400px;
+	object-fit: cover;
+	border-radius: 10px;
+}
+.about .about-content .right {
+	width: 60%;
+}
+.about .about-content .right .text span {
+	color: lightskyblue;
+	text-shadow: -1px 2px 2px skyblue;
+}
+.about .about-content .right .text {
+	font-size: 29px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.about .about-content .right p {
+	font-size: 19px;
+	text-align: justify;
+}
+
+
+/*Project START*/
+.project {
+	background: #111;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+}
+.project .title::before {
+	width: 220px;
+	background: #fff;
+}
+.project .title::after {
+	content: "Gallerie";
+	background: #111;
+}
+.project .project-content {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 350px 350px;
+	grid-gap: 40px;
+	margin-top: 0px;
+}
+.project .box {
+	background: url('../img/oui-oui.jpg') no-repeat;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	border-radius: 5px;
+	overflow: hidden;
+	transition: border-radius .4s ease, transform .4s ease;
+}
+.project .box:hover {
+	border-radius: 20px;
+	transform: scale(1.05);
+}
+.project .box .box-content {
+	background: hsla(0, 0%, 0%, .5);
+	position: relative;
+	top: 25%;
+	padding: 10px 25px;
+	height: 35%;
+	font-size: 17px;
+	transition: all .3s ease;
+}
+.project .box:hover .box-content {
+	background: hsla(0, 0%, 0%, .6);
+	top: 0;
+	height: 100%;
+	padding: 30px 10px;
+}
+.project .box .box-content .text {
+	color: lightskyblue;
+	font-size: 25px;
+	font-weight: 600;
+	text-shadow: 2px 2px 3px rgba(255, 70, 150, .6);
+	transition: text-shadow .3s ease;
+}
+.project .box:hover .box-content .text {
+	text-shadow: none;
+}
+.project .box .box-content .first-p {
+	display: inline-block;
+	transition: all .2s ease;
+}
+.project .box:hover .box-content .first-p {
+	display: none;
+}
+.project .box .box-content .second-p {
+	font-size: 18px;
+	font-weight: 500;
+	text-align: justify;
+	opacity: 0;
+	padding: 5px 14px;
+	margin-bottom: 25px;
+}
+.project .box .box-content a {
+	position: absolute;
+	bottom: 4%;
+	left: 28px;
+	font-size: 15px;
+	font-weight: 500;
+	color: #fff;
+	text-decoration: underline;
+	opacity: 0;
+	transition: all .4s ease;
+}
+.project .box:hover .box-content a {
+	opacity: 1;
+	transition: opacity .8s ease .6s;
+}
+.project .box .box-content a:hover {
+	color: lightskyblue;
+	text-shadow: 1px 1px 2px #111;
+	transition: all .1s ease;
+}
+.project .box:hover .box-content .second-p {
+	opacity: 1;
+	transition: all 1.5s ease .1s;
+}
