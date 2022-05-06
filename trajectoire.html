@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Numérix - Pole 1</title>
+	<link rel="stylesheet" type="text/css" href="css/style-trajectoire.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<!-- Navigation bar START -->
+	<nav>
+		<div class="wrap">
+			<div class="logo"><a href="#"><span>Numé</span>rix.</a></div>
+
+			<ul class="menu">
+				<li><a href="#index.html">Accueil</a></li>
+				<li><a href="#about">Trajectoires</a></li>
+				<li><a href="#project">Pôle 2</a></li>
+				<li><a href="#">Pôle 3</a></li>
+				<li><a href="#">Pôle 4</a></li>
+				<li><a href="#">Pôle N</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- Photo title START -->
+	<section class="home" id="home">
+		<div class="wrap">
+			<div class="home-content">
+				<div class="text-1">Vous visitez le pôle</div>
+				<div class="text-2">Trajectoire</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Description START -->
+	<section class="about" id="about">
+		<div class="wrap">
+			<h2 class="title">Simulation de trajectoires</h2>
+			<div class="about-content">
+				<div class="flex">
+					<div class="left"><img src="img/oui-oui.jpg"></div>
+					<div class="right">
+						<div class="titre">Un outil de simulation <span>numérique</span>.</div>
+						<p>Le pôle « Simulation de trajectoire » est dédié à l’étude numérique de la trajectoire d’un objet quelconque dans un milieu qui peut être l’atmosphère terrestre, le vide la lune, mars, etc. Notre simulation permet de tracer la trajectoire de ce corps, dont les caractéristiques telles que la masse, la taille, position, la vitesse, etc. sont libres de choix. Cela peut se faire en 2D ou en 3D, sachant qu’une animation est possible en 2D.</p>
+
+						<div class="titre">Une <span>analyse</span> détaillée du lancer.</div>
+						<p>En parallèle, il est possible de tracer n’importe quel paramètre en fonction d’un autre. Par exemple la vitesse en fonction du temps, ou l’altitude en fonction de la vitesse, etc. Pour cela, nous travaillons sur une interface graphique destinée aux utilisateurs du grand public. Avec celle-ci, pas besoin d’être scientifique, simplement votre curiosité vous apprendra beaucoup sur les lois de l’Univers.</p>
+					</div>
+				</div>
+				
+				<div class="normal">
+					<div class="titre">De la <span>théorie</span> à la pratique.</div>
+					<p>Nous travaillons en parallèle avec les pôles « Ballon sonde » et « Fusée expérimentale » en leur fournissant des données théoriques utiles à leur application concrète. Il est ensuite intéressant de comparer notre simulation avec les données récoltés lors du lancer du ballon sonde ou de la fusée expérimentale.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- section-1 SOMMAIRE START -->
+	<section class="section-1" id="section-1">
+		<div class="wrap">
+			<h2 class="title">Organisation de la page</h2>
+			<div class="section-1-content">
+
+				<ol>
+					<li><a href="#grand-1">Présentation des simulations</a></li>
+					<li><a href="#grand-2">Ballon sonde</a></li>
+					<li><a href="#grand-3">Fusée expérimentale</a></li>
+					<li><a href="#grand-4">Calculs physiques et code python</a></li>
+				</ol>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- section-2 GRAND-1 START -->
+	<section class="section-2" id="grand-1">
+		<div class="wrap">
+			<h2 class="title">Présentation des simulations</h2>
+			<div class="section-2-content">
+				<div class="partie-1">
+					<div class="titre">Sur un <span>astre</span> / autour d'un astre.</div>
+					<p>Prenez un objet, et lancez le. Sur Terre, la trajectoire est ralentie par des frottements laminaires ou turbulents selon la vitesse. La simulation permet de visualiser cela. Et si les frottements étaient moins importants comme sur mars ? En ayant déjà quitté l’atmosphère terrestre, il est difficile de s’imaginer comment cet objet réagira dans son espace. Voilà l’utilité de notre simulation, qui permet de visualiser le comportement de n’importe quoi n’importe où.</p>
+				</div>
+
+				<div class="partie-2">
+					<div class="left"><img src="img/Newton-poids.jpg"></div>
+					<div class="right">
+						<p><span>Galilée</span> avait l’intuition vers 1600 qu’une plume et un marteau lâchés au même moment dans le vide tomberait en même temps. C’est ce que <span>Isaac Newton</span> à démontré grâce au Principe Fondamental de la Dynamique (PFD) en 1687 que la masse d’un corps en chute libre1 est indépendante de sa trajectoire. En effet depuis l’Antiquité d’Aristote, il est « logique » qu’un corps lourd tombe toujours plus vite qu’un corps léger.</p>
+						<p>Explicitons la théorie de Newton, puis vérifions là avec notre outil numérique.</p>
+						<p class="definitions">chute libre : n’est soumis qu’à la force de son poids.</p>
+					</div>
+				</div>
+
+				<div class="partie-3">
+					<li class="titre-petit">Principe Fondamental de la Dynamique</li>
+					<p>Soit un corps M lâché en chute libre dans l’espace.</p>
+					<p>Equations maths</p>
+					<p>On remarque d’entré de jeu que <span>la masse se simplifie</span>, et donc <span>n’interviendra pas</span> dans l’équation de la trajectoire.</p>
+					<p>En projetant sur un repère cartésien, on obtient le système d’accélérations de M. Puis en intégrant ces expressions par rapport au temps, on en déduit les systèmes de vitesses et de position de M.</p>
+					<p>Equations maths</p>
+				</div>
+				
+				<div class="partie-4">
+					<div class="left">
+						<li class="titre-petit">Outil numérique</li>
+						<p>Pour montrer que le corps lourd et le corps léger tombent en même temps, on peut tracer leur <span>vitesse en fonction du temps</span>. Si le PFD de Newton est correct, on s’attend à avoir une courbe <span>identique</span> pour les deux corps, ce qui montre qu’en chute libre, la masse n’a pas d’influence sur la vitesse, et donc sur la trajectoire.</p>
+						<div class="images"><img src="img/Newton-0,1kg.png"><img src="img/Newton-1000kg.png"></div>
+					</div>
+
+					<div class="right"><img src="img/Newton-traj.png"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<script src="js/script.js"></script>
+</body>
+</html>
