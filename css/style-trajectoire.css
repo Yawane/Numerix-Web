@@ -227,6 +227,14 @@ nav.sticky .menu li a:hover {
 }
 .section-1 .section-1-content ol li a {
 	color: #fff;
+	text-decoration: none;
+	transition: all .3s ease;
+}
+.section-1 .section-1-content ol li:hover {
+	color: lightskyblue;
+}
+.section-1 .section-1-content ol li:hover a {
+	text-decoration: underline;
 }
 
 /*section-2 GRAND-1 START*/
