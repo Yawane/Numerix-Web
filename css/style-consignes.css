@@ -150,7 +150,7 @@ nav.sticky .menu li a:hover {
 	width: 200px;
 }
 .about .title::after {
-	content: "2ème titre";
+	content: "Rapport WEB";
 }
 .about .about-content {
 	display: flex;

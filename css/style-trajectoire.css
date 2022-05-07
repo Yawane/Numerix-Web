@@ -167,17 +167,17 @@ nav.sticky .menu li a:hover {
 	justify-content: space-between;
 }
 .about .about-content .left {
-	width: 40%;
+	width: 35%;
 }
 .about .about-content .left img {
-	width: 400px;
-	height: 400px;
+	width: 80%;
+	height: 80%;
 	object-fit: cover;
 	border-radius: 7px;
 	transition: all .3s ease-out;
 }
 .about .about-content .right {
-	width: 75%;
+	width: 65%;
 }
 .about .about-content p {
 	font-size: 19px;
@@ -284,14 +284,14 @@ nav.sticky .menu li a:hover {
 	margin: 20px 0;
 }
 .section-2 .section-2-content .partie-2 .left {
-	width: 25%;
+	width: 35%;
 }
 .section-2 .section-2-content .partie-2 .right {
-	width: 85%;
+	width: 75%;
 }
 .section-2 .section-2-content .partie-2 .left img {
-	width: 300px;
-	height: 220px;
+	width: 90%;
+	height: 100%;
 	object-fit: cover;
 	border-radius: 7px;
 	transition: all .3s ease-out;
@@ -301,7 +301,7 @@ nav.sticky .menu li a:hover {
 	justify-content: space-between;
 }
 .section-2 .section-2-content .partie-4 .left {
-	width: 80%;
+	width: 70%;
 }
 .section-2 .section-2-content .partie-4 .left .images {
 	display: flex;
@@ -309,17 +309,17 @@ nav.sticky .menu li a:hover {
 	justify-content: space-around;
 }
 .section-2 .section-2-content .partie-4 .left .images img {
-	width: 400px;
-	height: 350px;
+	width: 45%;
+	max-height: 45%;
 	object-fit: cover;
 	border-radius: 7px;
 }
 .section-2 .section-2-content .partie-4 .right {
-	width: 20%;
+	width: 25%;
 }
 .section-2 .section-2-content .partie-4 .right img {
-	width: 400px;
-	height: 550px;
+	width: 100%;
+	height: 100%;
 	object-fit: cover;
 	border-radius: 7px;
 }
