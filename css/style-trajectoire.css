@@ -49,13 +49,19 @@ section p {
 	text-align: justify;
 	padding-bottom: 15px;
 }
-section summary {
+section details summary {
 	font-size: 18px;
 	font-weight: 600;
 	text-align: justify;
 	text-decoration: underline;
 	cursor: pointer;
-	margin-left: 36px;
+}
+section details .detail-content {
+	display: flex;
+	padding-left: 5px;
+}
+section details .detail-content .text {
+	padding-left: 20px;
 }
 section p a {
 	text-decoration: underline;
@@ -292,7 +298,8 @@ nav.sticky .menu li a:hover {
 	text-shadow: -1px 2px 2px skyblue;
 }
 .section-2 .section-2-content p span {
-	color: lightskyblue;
+	color: #7FC0EB;
+	font-weight: 500;
 }
 .section-2 .section-2-content .partie-2 .right .definitions {
 	font-size: 12px;
