@@ -44,6 +44,19 @@ section .title::after {
 	background: #fff;
 	transform: translateX(-50%);
 }
+section p {
+	font-size: 19px;
+	text-align: justify;
+	padding-bottom: 15px;
+}
+section summary {
+	font-size: 18px;
+	font-weight: 600;
+	text-align: justify;
+	text-decoration: underline;
+	cursor: pointer;
+	margin-left: 36px;
+}
 section p a {
 	text-decoration: underline;
 	color: inherit;
@@ -179,11 +192,6 @@ nav.sticky .menu li a:hover {
 .about .about-content .right {
 	width: 65%;
 }
-.about .about-content p {
-	font-size: 19px;
-	text-align: justify;
-	padding-bottom: 15px;
-}
 .about .about-content p span {
 	color: red;
 	font-weight: 700;
@@ -264,11 +272,6 @@ nav.sticky .menu li a:hover {
 .section-2 .section-2-content .titre span {
 	color: lightskyblue;
 	text-shadow: -1px 2px 2px skyblue;
-}
-.section-2 .section-2-content p {
-	font-size: 19px;
-	text-align: justify;
-	padding-bottom: 15px;
 }
 .section-2 .section-2-content p span {
 	color: lightskyblue;

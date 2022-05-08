@@ -6,6 +6,8 @@
 	<title>Numérix - pôle Trajetoire</title>
 	<link rel="stylesheet" type="text/css" href="css/style-trajectoire.css">
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
 	<!-- Navigation bar START -->
@@ -94,10 +96,14 @@
 				<div class="partie-3">
 					<li class="titre-petit">Principe Fondamental de la Dynamique</li>
 					<p>Soit un corps M lâché en chute libre dans l’espace.</p>
-					<p>Equations maths</p>
+					<p>$$\sum{{\vec{F}}_{ext}(M)}=m\vec{a}\left(M\right)\Longleftrightarrow\vec{P}=m\vec{a}\left(M\right)$$
+					$$m\vec{g}=m\vec{a}\left(M\right)\Longleftrightarrow-g\cdot\vec{k}=\vec{a}\left(M\right)$$</p>
 					<p>On remarque d’entré de jeu que <span>la masse se simplifie</span>, et donc <span>n’interviendra pas</span> dans l’équation de la trajectoire.</p>
-					<p>En projetant sur un repère cartésien, on obtient le système d’accélérations de M. Puis en intégrant ces expressions par rapport au temps, on en déduit les systèmes de vitesses et de position de M.</p>
-					<p>Equations maths</p>
+					<details>
+						<summary>Démonstration</summary>
+						<p>En projetant sur un repère cartésien, on obtient le système d’accélérations de M. Puis en intégrant ces expressions par rapport au temps, on en déduit les systèmes de vitesses et de position de M.</p>
+						<p>$$\vec{a}\left(M\right)=x=0y=0z=-g⟺vM=x=x0y=y0z=-gt+z0⟺OM=xt=x0t+x0yt=y0t+y0zt=-g2t2+z0t+z0$$</p>
+					</details>
 				</div>
 				
 				<div class="partie-4">
