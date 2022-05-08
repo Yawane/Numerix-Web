@@ -81,15 +81,15 @@
 			<div class="section-2-content">
 				<div class="partie-1">
 					<div class="titre">Sur un <span>astre</span> / autour d'un astre.</div>
-					<p>Prenez un objet, et lancez le. Sur Terre, la trajectoire est ralentie par des frottements laminaires ou turbulents selon la vitesse. La simulation permet de visualiser cela. Et si les frottements étaient moins importants comme sur mars ? En ayant déjà quitté l’atmosphère terrestre, il est difficile de s’imaginer comment cet objet réagira dans son espace. Voilà l’utilité de notre simulation, qui permet de visualiser le comportement de n’importe quoi n’importe où.</p>
+					<p>Prenez un objet, et lancez le. Sur Terre, la trajectoire est ralentie par des frottements laminaires ou turbulents selon la vitesse. La simulation permet de visualiser cela. Et si les frottements étaient moins importants comme sur <span>Mars</span> ? En ayant déjà quitté l’atmosphère terrestre, il est difficile de s’imaginer comment cet objet réagira dans son espace. Voilà l’utilité de notre simulation, qui permet de visualiser le comportement de <span>n’importe quoi</span>, <span>n’importe où</span>.</p>
 				</div>
 
 				<div class="partie-2">
 					<div class="left"><img src="img/trajectoire/Newton-poids.jpg"></div>
 					<div class="right">
-						<p><span>Galilée</span> avait l’intuition vers 1600 qu’une plume et un marteau lâchés au même moment dans le vide tomberait en même temps. C’est ce que <span>Isaac Newton</span> à démontré grâce au Principe Fondamental de la Dynamique (PFD) en 1687 que la masse d’un corps en chute libre1 est indépendante de sa trajectoire. En effet depuis l’Antiquité d’Aristote, il est « logique » qu’un corps lourd tombe toujours plus vite qu’un corps léger.</p>
+						<p><span class="color">Galilée</span> avait l’intuition vers 1600 qu’une plume et un marteau lâchés au même moment dans le vide tomberait en même temps. C’est ce que <span class="color">Isaac Newton</span> à démontré grâce au Principe Fondamental de la Dynamique (PFD) en 1687 que la masse d’un corps en chute libre<sup>1</sup> est indépendante de sa trajectoire. En effet depuis l’Antiquité d’Aristote, il est « logique » qu’un corps lourd tombe toujours plus vite qu’un corps léger.</p>
 						<p>Explicitons la théorie de Newton, puis vérifions là avec notre outil numérique.</p>
-						<p class="definitions">chute libre : n’est soumis qu’à la force de son poids.</p>
+						<p class="definitions"><sup>1</sup>chute libre : n’est soumis qu’à la force de son poids.</p>
 					</div>
 				</div>
 
@@ -98,17 +98,17 @@
 					<p>Soit un corps \(M\) lâché en chute libre dans l’espace.</p>
 					<p>$$\sum{{\vec{F}}_{ext}(M)}=m\vec{a}\left(M\right)\Longleftrightarrow\vec{P}=m\vec{a}\left(M\right)$$
 					$$m\vec{g}=m\vec{a}\left(M\right)\Longleftrightarrow-g\cdot\vec{k}=\vec{a}\left(M\right)$$</p>
-					<p>On remarque d’entré de jeu que <strong>la masse se simplifie</strong>, et donc <strong>n’interviendra pas</strong> dans l’équation de la trajectoire.</p>
+					<p>On remarque d’entrée de jeu que <strong>la masse se simplifie</strong>, et donc <strong>n’interviendra pas</strong> dans l’équation de la trajectoire.</p>
 					<details>
 						<summary>Démonstration</summary>
 						<div class="detail-content">
-							<hr width="1">
+							<hr>
 							<div class="text">
 								<p>En projetant sur un repère cartésien, on obtient le système d’accélérations de \(M\). Puis en intégrant ces expressions par rapport au temps, on en déduit les systèmes de vitesses et de position de \(M\).</p>
 								<p>Equation maths.</p>
 								<p>Supposons que le mouvement se fait dans le plan \((O,x,z)\). En déduisant que \(t=\frac{x\left(t\right)-x_0}{{\dot{x}}_0}\), on conclut sur l’équation de la trajectoire \(z(x)\) :
 								$$z\left(x\right)=-\frac{g}{2}\left(\frac{x-x_0}{{\dot{x}}_0}\right)^2+{\dot{z}}_0\left(\frac{x-x_0}{{\dot{x}}_0}\right)+z_0$$</p>
-								<p>Pour simplifier l’expression, on peut supposer que la position initiale du corps est à l’origine du repère.$$z\left(x\right)=-\frac{g}{2{{\dot{x}}_0}^2}x^2+\frac{{\dot{z}}_0}{{\dot{x}}_0}x$$On démontre à nouveau que la masse n’est pas impliquée dans l’équation de la trajectoire, donc le mouvement d’un corps est indépendant de sa masse.</p>
+								<p>Pour simplifier l’expression, on peut supposer que la position initiale du corps est à l’origine du repère.$$z\left(x\right)=-\frac{g}{2{{\dot{x}}_0}^2}x^2+\frac{{\dot{z}}_0}{{\dot{x}}_0}x$$On démontre à nouveau que <span class="color">la masse n’est pas impliquée</span> dans l’équation de la trajectoire, donc le mouvement d’un corps est <span class="color"><strong>indépendant</strong></span> de sa masse.</p>
 							</div>
 						</div>
 					</details>
@@ -117,7 +117,7 @@
 				<div class="partie-4">
 					<div class="left">
 						<li class="titre-petit">Outil numérique</li>
-						<p>Pour montrer que le corps lourd et le corps léger tombent en même temps, on peut tracer leur <span>vitesse en fonction du temps</span>. Si le PFD de Newton est correct, on s’attend à avoir une courbe <span>identique</span> pour les deux corps, ce qui montre qu’en chute libre, la masse n’a pas d’influence sur la vitesse, et donc sur la trajectoire.</p>
+						<p>Pour montrer que le corps lourd et le corps léger tombent en même temps, on peut tracer leur <strong>vitesse en fonction du temps</strong>. Si le PFD de Newton est correct, on s’attend à avoir une courbe <strong>identique</strong> pour les deux corps, ce qui montrerait qu’en chute libre la masse n’a pas d’influence sur la vitesse, et donc sur la trajectoire.</p>
 						<div class="images"><img src="img/trajectoire/Newton-0,1kg.png"><img src="img/trajectoire/Newton-1000kg.png"></div>
 					</div>
 

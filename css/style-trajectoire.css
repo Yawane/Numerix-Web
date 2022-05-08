@@ -67,6 +67,19 @@ section p a {
 	text-decoration: underline;
 	color: inherit;
 }
+section .titre span {
+	color: lightskyblue;
+	text-shadow: -1px 2px 2px skyblue;
+}
+section p .color {
+	color: #7FC0EB;
+	font-weight: 500;
+}
+section p sup {
+	font-size: 12px;
+	font-family: 'Ubuntu', sans-serif;
+	font-style: italic;
+}
 
 
 /*Navigation bar START*/
@@ -176,10 +189,6 @@ nav.sticky .menu li a:hover {
 	font-weight: 600;
 	margin-bottom: 8px;
 }
-.about .about-content .titre span {
-	color: lightskyblue;
-	text-shadow: -1px 2px 2px skyblue;
-}
 .about .about-content .flex {
 	display: flex;
 	align-items: center;
@@ -197,10 +206,6 @@ nav.sticky .menu li a:hover {
 }
 .about .about-content .right {
 	width: 65%;
-}
-.about .about-content p span {
-	color: red;
-	font-weight: 700;
 }
 .about .about-content .normal {
 	margin: 40px 0;
@@ -233,39 +238,21 @@ nav.sticky .menu li a:hover {
 	list-style: upper-roman;
 	font-size: 29px;
 	font-weight: 600;
-
 }
 .section-1 .section-1-content ol li {
 	margin-bottom: 15px;
 	padding-left: 30px;
+	color: #0087ca;
+	transition: color .1s ease, padding-left .2s ease;
 }
 .section-1 .section-1-content ol li a {
 	color: #fff;
 	text-decoration: none;
 	transition: all .3s ease;
 }
-.section-1 .section-1-content ol .animation {
-  	position: relative;
-  	color: #0087ca;
-}
-.section-1 .section-1-content ol .animation:after {
-	content: '';
-  	position: absolute;
-  	width: 35%;
-  	transform: scaleX(0);
-  	height: 2px;
-  	bottom: 0;
-  	left: 30px;
-  	background-color: #0087ca;
-  	transform-origin: bottom right;
-  	transition: transform 0.25s ease-out;
-}
-.section-1 .section-1-content ol .animation:hover:after {
-	transform: scaleX(1);
-  	transform-origin: bottom left;
-}
 .section-1 .section-1-content ol li:hover {
 	color: lightskyblue;
+	padding-left: 34px;
 }
 
 
@@ -292,14 +279,6 @@ nav.sticky .menu li a:hover {
 	font-size: 24px;
 	font-weight: 600;
 	margin-bottom: 2px;
-}
-.section-2 .section-2-content .titre span {
-	color: lightskyblue;
-	text-shadow: -1px 2px 2px skyblue;
-}
-.section-2 .section-2-content p span {
-	color: #7FC0EB;
-	font-weight: 500;
 }
 .section-2 .section-2-content .partie-2 .right .definitions {
 	font-size: 12px;
