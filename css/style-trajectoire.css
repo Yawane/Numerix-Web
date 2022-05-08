@@ -74,7 +74,7 @@ nav {
 }
 
 nav.sticky {
-	padding: 8px 0;
+	padding: 4px 0;
 	background: lightskyblue;
 	box-shadow: 0px 3px 5px rgba(0, 0, 0, .3);
 }
@@ -90,7 +90,7 @@ nav .logo a {
 	transition: all .2s ease;
 }
 nav.sticky .logo a {
-	font-size: 40px;
+	font-size: 35px;
 }
 nav .logo a span {
 	color: lightskyblue;
@@ -238,12 +238,30 @@ nav.sticky .menu li a:hover {
 	text-decoration: none;
 	transition: all .3s ease;
 }
+.section-1 .section-1-content ol .animation {
+  	position: relative;
+  	color: #0087ca;
+}
+.section-1 .section-1-content ol .animation:after {
+	content: '';
+  	position: absolute;
+  	width: 35%;
+  	transform: scaleX(0);
+  	height: 2px;
+  	bottom: 0;
+  	left: 30px;
+  	background-color: #0087ca;
+  	transform-origin: bottom right;
+  	transition: transform 0.25s ease-out;
+}
+.section-1 .section-1-content ol .animation:hover:after {
+	transform: scaleX(1);
+  	transform-origin: bottom left;
+}
 .section-1 .section-1-content ol li:hover {
 	color: lightskyblue;
 }
-.section-1 .section-1-content ol li:hover a {
-	text-decoration: underline;
-}
+
 
 /*section-2 GRAND-1 START*/
 .section-2 {

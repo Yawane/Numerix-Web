@@ -55,7 +55,7 @@ nav {
 	transition: all .2s ease;
 }
 nav.sticky {
-	padding: 8px 0;
+	padding: 4px 0;
 	background: lightskyblue;
 	box-shadow: 0px 3px 5px rgba(0, 0, 0, .3);
 }
@@ -71,7 +71,7 @@ nav .logo a {
 	transition: all .2s ease;
 }
 nav.sticky .logo a {
-	font-size: 40px;
+	font-size: 35px;
 }
 nav .logo a span {
 	color: lightskyblue;
@@ -102,7 +102,7 @@ nav .menu li a:hover {
 }
 nav.sticky .menu li a:hover {
 	color: #fff;
-	text-shadow: 3px 3px 2px rgba(0, 0, 0, .1);
+	text-shadow: 3px 3px 2px rgba(0, 0, 0, .15);
 }
 
 
