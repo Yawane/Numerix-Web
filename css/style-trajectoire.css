@@ -78,7 +78,7 @@ section p .color {
 section p sup {
 	font-size: 12px;
 	font-family: 'Ubuntu', sans-serif;
-	font-style: italic;
+	font-style: normal;
 }
 
 
@@ -275,14 +275,14 @@ nav.sticky .menu li a:hover {
 	font-weight: 600;
 	margin-bottom: 8px;
 }
+.section-2 .section-2-content .definitions {
+	font-size: 13px;
+	text-align: end;
+}
 .section-2 .section-2-content .titre-petit {
 	font-size: 24px;
 	font-weight: 600;
 	margin-bottom: 2px;
-}
-.section-2 .section-2-content .partie-2 .right .definitions {
-	font-size: 12px;
-	text-align: end;
 }
 .section-2 .section-2-content .partie-2 {
 	display: flex;
@@ -329,4 +329,29 @@ nav.sticky .menu li a:hover {
 	height: 100%;
 	object-fit: cover;
 	border-radius: 7px;
+}
+.section-2 .section-2-content .partie-5 {
+	padding: 40px 0;
+}
+.section-2 .section-2-content .partie-6 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.section-2 .section-2-content .partie-6 img {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	width: 85%;
+	object-fit: cover;
+}
+.section-2 .section-2-content .partie-6 .legend {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	width: 80%;
+	font-size: 17px;
+	justify-content: space-between;
+	text-align: center;
+
 }
