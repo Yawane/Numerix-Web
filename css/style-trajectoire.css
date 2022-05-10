@@ -196,9 +196,13 @@ nav.sticky .menu li a:hover {
 }
 .about .about-content .left {
 	width: 35%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 60% 60%;
+	margin-top: 0px;
 }
 .about .about-content .left img {
-	width: 80%;
+	width: 90%;
 	height: 80%;
 	object-fit: cover;
 	border-radius: 7px;
