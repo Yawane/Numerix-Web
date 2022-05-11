@@ -157,14 +157,13 @@ nav.sticky .menu li a:hover {
 	width: 40%;
 }
 .about .about-content .left img {
-	width: 400px;
-	height: 400px;
+	width: 80%;
 	object-fit: cover;
 	border-radius: 7px;
 	transition: all .3s ease-out;
 }
 .about .about-content .right {
-	width: 60%;
+	width: 80%;
 }
 .about .about-content .right .text {
 	font-size: 29px;
