@@ -6,8 +6,13 @@
 	box-sizing: border-box;
 	text-decoration: none;
 }
+ul {
+	font-size: 19px;
+	text-align: justify;
+	padding-bottom: 15px;
+}
 .wrap {
-	max-width: 1600px;
+	max-width: 1500px;
 	margin: auto;
 	padding: 0 80px;
 }
@@ -18,12 +23,12 @@ section {
 section .title {
 	position: relative;
 	text-align: center;
+	transition: margin-bottom .3s ease-out;
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 43px;
 	font-weight: 500;
 	margin-bottom: 60px;
 	padding-bottom: 20px;
-	transition: margin-bottom .3s ease-out;
 }
 section .title::before {
 	content: "";
@@ -49,6 +54,13 @@ section p {
 	text-align: justify;
 	padding-bottom: 15px;
 }
+section ul {
+	margin-left: 30px;
+	padding: 15px 0;
+}
+section li {
+	padding: 5px 10px;
+}
 section details summary {
 	font-size: 18px;
 	font-weight: 600;
@@ -71,7 +83,7 @@ section .titre span {
 	color: lightskyblue;
 	text-shadow: -1px 2px 2px skyblue;
 }
-section p .color {
+section .color {
 	color: #7FC0EB;
 	font-weight: 500;
 }
