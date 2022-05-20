@@ -21,6 +21,12 @@ section .title-2 {
 	transition: margin-bottom .3s ease-out;
 }
 
+.list {
+	font-size: 19px;
+	text-align: justify;
+	padding-bottom: 15px;
+}
+
 /*Home START*/
 .home {
 	background: url('../img/home-background.png');

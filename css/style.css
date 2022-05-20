@@ -6,11 +6,6 @@
 	box-sizing: border-box;
 	text-decoration: none;
 }
-ul {
-	font-size: 19px;
-	text-align: justify;
-	padding-bottom: 15px;
-}
 .wrap {
 	max-width: 1500px;
 	margin: auto;

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Numérix - pôle Transformation de Joukovski</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/ballon-sonde.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+	<!-- Navigation bar START -->
+	<nav>
+		<div class="wrap">
+			<div class="logo"><a href="#home"><span>Numé</span>rix.</a></div>
+
+			<ul class="menu">
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="trajectoire.html">Trajectoire</a></li>
+				<li><a href="ballon-sonde.html">Ballon Sonde</a></li>
+				<li><a href="ballon-sonde.html">Joukovski</a></li>
+				<!--<li><a href="consignes.html">Consignes</a></li>-->
+			</ul>
+		</div>
+	</nav>
+
+	<!-- Photo title START -->
+	<section class="home" id="home">
+		<div class="wrap">
+			<div class="home-content">
+				<div class="text-1">Vous visitez le pôle</div>
+				<div class="text-2">Transformation de Joukovski</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Description START -->
+	<section class="about" id="about">
+		<div class="wrap">
+			<h2 class="title">Transformation de Joukovski</h2>
+			<div class="about-content">
+				<div class="flex">
+					<div class="left"><img src="img/joukovski/Image1.png"></div>
+					<div class="right">
+
+						<div class="titre">Un outil de simulation <span>numérique</span>.</div>
+						<p>Le pôle « Transformation de Joukovski » est dédié à l’étude numérique de l’écoulement de l’air autour d’un profil d’aile. Notre simulation permettra de faire apparaître les lignes de courant autour d’un profil d’aile ainsi que le coefficient de portance associé à celle-ci. De plus, notre code nous permettra de changer les différents paramètres associés à l’aile pour pouvoir constater des différences.</p>
+
+						<div class="titre">Une utilisation de la transformation de <span>Joukovski</span>.</div>
+						<p>Pour faire cela, nous allons utiliser une transformation nommé transformation de Joukovsky, d’après le savant russe Nikolaï Joukovski. Cette transformation permet, en autres, de passer d’un cercle à un profil d’aile. Comme le cercle est une figure dont il est assez facile d’obtenir les lignes de courant, en appliquant cette même transformation à chaque ligne de courant autour du cercle, on aura celle autour du profil d’aile.</p>
+
+						<div class="titre">De la <span>théorie</span> à la pratique...</div>
+						<p>Nous travaillons en parallèle avec les pôles « Simulation Catia » et « Soufflerie » en leur fournissant des données théoriques utiles à leur application concrète. A termes, notre but est de faire la même simulation, d’un côté numériquement, avec notre simulation, et de l’autre en pratique, avec la soufflerie. On pourra alors exploiter les différences obtenues.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Sommaire START -->
+	<section class="section-1" id="section-1">
+		<div class="wrap">
+			<h2 class="title">Que voulez vous savoir ?</h2>
+			<div class="section-1-content">
+
+				<ol>
+					<li class="animation"><a href="#grand-1">Zoom sur Nikolaï Joukovski</a></li>
+					<li class="animation"><a href="#grand-2">Présentation mathématique de la transformation</a></li>
+					<li class="animation"><a href="#grand-3">Mise en place du calcul de la portance</a></li>
+					<li class="animation"><a href="#grand-4">Limite de cette transformation</a></li>
+					<li class="animation"><a href="#grand-5">Code python</a></li>
+				</ol>
+
+			</div>
+		</div>
+	</section>
+
+	<script src="js/script.js"></script>
+</body>
+</html>
