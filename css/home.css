@@ -125,13 +125,14 @@
 	height: 45%;
 	font-size: 17px;
 	overflow: hidden;
-	transition: all .3s ease;
+	transition-delay: 3s;
 }
 .project .box:hover .box-text {
 	background: hsla(0, 0%, 0%, .75);
 	top: 0;
 	height: 100%;
 	padding: 50px 18px;
+	transition: all .3s ease;
 }
 .project .box .box-text .text {
 	color: lightskyblue;
