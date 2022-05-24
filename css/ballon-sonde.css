@@ -140,7 +140,7 @@ section .title-2 {
 	padding-left: 34px;
 }
 
-/*Section-2 Grand 1 START*/
+/*Section-2 Grand 1A START*/
 .section-2 {
 	background: #fff;
 	color: #111;
@@ -164,4 +164,16 @@ section .title-2 {
 }
 .section-2 .section-2-content .partie-1 .right {
 	width: 75%;
+}
+
+/*Section-2 Grand 1B START*/
+.section-3 {
+	background: #fff;
+	color: #111;
+	font-family: 'Poppins', sans-serif;
+}
+
+.section-3 .section-3-content img {
+	width: 100%;
+	margin: 30px 0;
 }
