@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+section .title {
+	position: relative;
+	text-align: center;
+	margin-bottom: 60px;
+	padding-bottom: 20px;
+	transition: margin-bottom .3s ease-out;
+}
+
+/*Home START*/
+.home {
+	background: url('../img/home-background.png');
+	height: 40vh;
+	display: flex;
+	font-family: 'Ubuntu', sans-serif;
+	min-height: 500px;
+	color: #fff;
+}
+.home .wrap {
+	margin: auto 50px;
+}
+.home .home-content {
+	margin-top: 7vh;
+	display: flex;
+}
+.home .home-content .text-1 {
+	font-size: 50px;
+	font-weight: 500;
+	margin-top: 50px;
+	transition: font-size .3s ease-out;
+}
+.home .home-content .text-2 {
+	font-size: 105px;
+	font-weight: 600;
+	margin-left: 18vh;
+	transition: font-size .3s ease-out;
+}
+
+/*About START*/
+.about {
+	background: #fff;
+	font-family: 'Poppins', sans-serif;
+	margin-bottom: 40px;
+}
+.about .title::before {
+	width: 280px;
+}
+.about .title::after {
+	content: "Qui sommes nous ?";
+}
+.about .about-content .titre {
+	font-size: 29px;
+	font-weight: 600;
+	margin-bottom: 8px;
+}
+.about .about-content .flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.about .about-content .left {
+	width: 30%;
+	display: grid;
+	margin-top: 0px;
+}
+.about .about-content .left img {
+	width: 70%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 7px;
+	transition: all .3s ease-out;
+}
+.about .about-content .right {
+	width: 75%;
+}
+.about .about-content .normal {
+	margin: 40px 0;
+}
+
+/*Section-1 SOMMAIRE START*/
+.section-1 {
+	background: #222;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+}
+.section-1 .title::before {
+	background: #fff;
+	width: 200px;
+}
+.section-1 .title::after {
+	background: #222;
+	color: lightskyblue;
+	content: "Sommaire";
+}
+.section-1 .section-1-content {
+	margin-left: 10%;
+}
+.section-1 .section-1-content {
+	width: 100%;
+}
+
+.section-1 .section-1-content ol {
+	list-style: upper-roman;
+	font-size: 29px;
+	font-weight: 600;
+}
+.section-1 .section-1-content ol li {
+	margin-bottom: 15px;
+	padding-left: 30px;
+	color: #0087ca;
+	transition: color .1s ease, padding-left .2s ease;
+}
+.section-1 .section-1-content ol li a {
+	color: #fff;
+	text-decoration: none;
+	transition: all .3s ease;
+}
+.section-1 .section-1-content ol li:hover {
+	color: lightskyblue;
+	padding-left: 34px;
+}
+
+/*Section-2 START*/
+.section-2 {
+	background: #fff;
+	color: #111;
+	font-family: 'Poppins', sans-serif;
+}
+.section-2 .titre {
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 8px;
+}
+.section-2 .partie-1, .section-2 .partie-2 {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.section-2 .partie-1 .left {
+	width: 100%;
+	height: 100%;
+}
+.section-2 .partie-1 .left img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 7px;
+	transition: all .3s ease-out;
+}
+.section-2 .partie-1 .right {
+	width: 50%;
+}
+.section-2 .partie-2 .right {
+	width: 100%;
+	margin: 0 auto;
+}
+.section-2 .partie-2 .right img {
+	width: 60%;
+	object-fit: cover;
+	border-radius: 7px;
+	transition: all .3s ease-out;
+}
+.section-2 .partie-2 .left {
+	width: 60%;
+}
